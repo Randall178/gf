@@ -5,6 +5,6 @@ Contributors
 ***************
 Daniel Branysh
 Randall Hinojos
-Emmanual Huitron
+Emmanuel Huitron
 ****************
 
