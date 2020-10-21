@@ -6,6 +6,7 @@ public class Walk : MonoBehaviour
 {
     private SpriteRenderer mySpriteRenderer;
     Animator anim;
+    float walkSpeed = 13f;
     
     
     //Private void Awake()
@@ -34,12 +35,12 @@ public class Walk : MonoBehaviour
     {
         if(Input.GetKey (KeyCode.W))
         {
-            transform.Translate(Vector2.up * 13f * Time.deltaTime);
+            transform.Translate(Vector2.up * walkSpeed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
         }
         if(Input.GetKey (KeyCode.A))
         {
-            transform.Translate(Vector2.left * 13f * Time.deltaTime);
+            transform.Translate(Vector2.left * walkSpeed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
             if(mySpriteRenderer != null)
             {
@@ -49,12 +50,12 @@ public class Walk : MonoBehaviour
         }
         if(Input.GetKey (KeyCode.S))
         {
-            transform.Translate(Vector2.down * 13f * Time.deltaTime);
+            transform.Translate(Vector2.down * walkSpeed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
         }
         if(Input.GetKey (KeyCode.D))
         {
-            transform.Translate(Vector2.right * 13f * Time.deltaTime);
+            transform.Translate(Vector2.right * walkSpeed * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
                 if(Input.GetKeyDown(KeyCode.D))
                 {
