@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class Walk : MonoBehaviour
 {
+    private SpriteRenderer mySpriteRenderer;
     Animator anim;
+    
+    
+    //Private void Awake()
+    //{
+        //mySpriteRenderer = GetComponent<SpriteRenderer>();
+    //}
     
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        mySpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -26,23 +34,33 @@ public class Walk : MonoBehaviour
     {
         if(Input.GetKey (KeyCode.W))
         {
-            transform.Translate(Vector2.up * 3f * Time.deltaTime);
+            transform.Translate(Vector2.up * 13f * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
         }
         if(Input.GetKey (KeyCode.A))
         {
-            transform.Translate(Vector2.left * 3f * Time.deltaTime);
+            transform.Translate(Vector2.left * 13f * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
+            if(mySpriteRenderer != null)
+            {
+                 // flip the sprite
+                 mySpriteRenderer.flipX = true;
+            }
         }
         if(Input.GetKey (KeyCode.S))
         {
-            transform.Translate(Vector2.down * 3f * Time.deltaTime);
+            transform.Translate(Vector2.down * 13f * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
         }
         if(Input.GetKey (KeyCode.D))
         {
-            transform.Translate(Vector2.right * 3f * Time.deltaTime);
+            transform.Translate(Vector2.right * 13f * Time.deltaTime);
             transform.eulerAngles = new Vector2(0, 0);
+                if(Input.GetKeyDown(KeyCode.D))
+                {
+                    // flip the sprite
+                    mySpriteRenderer.flipX = false;
+                }
         }
     }
 }
