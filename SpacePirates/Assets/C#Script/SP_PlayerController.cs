@@ -9,6 +9,7 @@ public class SP_PlayerController : MonoBehaviour
     //Compnents
     Rigidbody myRB;
     Transform myAvatar;
+    Animator myAnim;
     //Player movement 
     [SerializeField] InputAction WASD;
     Vector2 movementInput;
@@ -24,10 +25,13 @@ public class SP_PlayerController : MonoBehaviour
         WASD.Disable();
     }
 
+    //Start is called before the first frame update
     void Start()
     {
         myRB = GetComponent<Rigidbody>();
         myAvatar = transform.GetChild(0);
+
+        myAnim = GetComponent<Animator>();
     }
 
     void Update()
@@ -37,6 +41,8 @@ public class SP_PlayerController : MonoBehaviour
         {
             myAvatar.localScale = new Vector2(Mathf.Sign(movementInput.x), 1);
         }
+
+        myAnim.SetFloat("Speed", movementInput.magnitude);
     }
     private void FixedUpdate()
     {

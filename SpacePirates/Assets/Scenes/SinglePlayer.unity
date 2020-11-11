@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7b0dfab66ff2402683849cf1beb6093, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 589479631}
+  target: {fileID: 1018710472}
   smoothSpeed: 0.125
   offset: {x: 0, y: 0, z: -10}
 --- !u!20 &519420031
@@ -291,7 +291,7 @@ SpriteRenderer:
   m_Size: {x: 4.5806546, y: 6.8999996}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &589479630
@@ -419,6 +419,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1018710472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3644684793176440410, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+  m_PrefabInstance: {fileID: 1089182817874653801}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1476863085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,6 +1073,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3623799761359573001, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -12.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3623799761359573001, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.1
+      objectReference: {fileID: 0}
     - target: {fileID: 3644684793176440410, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21
