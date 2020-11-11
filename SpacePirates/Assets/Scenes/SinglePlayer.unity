@@ -134,13 +134,29 @@ PrefabInstance:
       propertyPath: m_Name
       value: AU_PlayerTEST
       objectReference: {fileID: 0}
+    - target: {fileID: 3384196326152717007, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1738048485
+      objectReference: {fileID: 0}
+    - target: {fileID: 3384196326152717007, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_SortingLayer
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386223572825396524, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -49.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386223572825396524, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -50.1
+      objectReference: {fileID: 0}
     - target: {fileID: 7940564601142648312, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 46.981365
+      value: 76.2
       objectReference: {fileID: 0}
     - target: {fileID: 7940564601142648312, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 68.89459
+      value: 76.5
       objectReference: {fileID: 0}
     - target: {fileID: 7940564601142648312, guid: 3bd3896d3dc6e3642bc50b27fa525ef3, type: 3}
       propertyPath: m_LocalPosition.z
