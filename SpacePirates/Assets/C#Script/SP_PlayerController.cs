@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 public class SP_PlayerController : MonoBehaviour
 {
     //Compnents
-    Rigidbody myRB;
+    Rigidbody2D myRB;
     Transform myAvatar;
     Animator myAnim;
     //Player movement 
@@ -28,7 +28,7 @@ public class SP_PlayerController : MonoBehaviour
     //Start is called before the first frame update
     void Start()
     {
-        myRB = GetComponent<Rigidbody>();
+        myRB = GetComponent<Rigidbody2D>();
         myAvatar = transform.GetChild(0);
 
         myAnim = GetComponent<Animator>();
